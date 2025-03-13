@@ -3,26 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Tier1 Team</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #333;
-            text-align: center;
-        }
-    </style>
+    <title>Cat Breeds Guide</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello Tier1 team</h1>
+    <header>
+        <h1>Cat Breeds Guide</h1>
+        <p>Discover different types of cat breeds and their characteristics</p>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search cat breeds...">
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="filters">
+            <select id="filter-size">
+                <option value="">Filter by Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <select id="filter-fur">
+                <option value="">Filter by Fur Length</option>
+                <option value="short">Short</option>
+                <option value="medium">Medium</option>
+                <option value="long">Long</option>
+            </select>
+        </div>
+
+        <div id="cat-breeds-container" class="cat-breeds-container">
+            <!-- Cat breeds will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Cat Breeds Guide | Created for Tier1 Team</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html> 
